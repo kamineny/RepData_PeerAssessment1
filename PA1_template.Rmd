@@ -148,4 +148,3 @@ xyplot(avgSteps$meanOfSteps ~ avgSteps$interval | avgSteps$weekdays,
        layout = c(1, 2), type = "l", 
        xlab = "Interval", ylab = "Number of steps")
 ```
- No newline at end of file
