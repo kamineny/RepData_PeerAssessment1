@@ -1,5 +1,5 @@
 # Reproducible Research: Peer Assessment 1
-Created by Sridher Kaminani on September 11, 2014
+Created by Sridher Kaminani on September 14, 2014
 
 ### Basic settings to Make the code visible
 ```{r}
@@ -148,3 +148,4 @@ xyplot(avgSteps$meanOfSteps ~ avgSteps$interval | avgSteps$weekdays,
        layout = c(1, 2), type = "l", 
        xlab = "Interval", ylab = "Number of steps")
 ```
+ End of file

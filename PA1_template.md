@@ -1,5 +1,5 @@
 # Reproducible Research: Peer Assessment 1
-Created by Sridher Kaminani on September 11, 2014
+Created by Sridher Kaminani on September 14, 2014
 
 ### Basic settings to Make the code visible
 
@@ -45,10 +45,19 @@ dim(cleanData)
 
 ```r
 library(ggplot2)
+```
+
+```
+## Error: there is no package called 'ggplot2'
+```
+
+```r
 ggplot(cleanData, aes(date, steps)) + geom_bar(stat = "identity", colour = "steelblue", fill = "steelblue", width = 0.7) + facet_grid(. ~ month, scales = "free") + labs(title = "Histogram of Total Number of Steps Taken Each Day", x = "Date", y = "Total number of steps")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+```
+## Error: could not find function "ggplot"
+```
 
 2. Calculate and report the mean and median total number of steps taken per day
 
@@ -86,7 +95,9 @@ names(avgSteps)[2] <- "meanOfSteps"
 ggplot(avgSteps, aes(interval, meanOfSteps)) + geom_line(color = "steelblue", size = 0.8) + labs(title = "Time Series Plot of the 5-minute Interval", x = "5-minute intervals", y = "Average Number of Steps Taken")
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6.png) 
+```
+## Error: could not find function "ggplot"
+```
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -159,7 +170,9 @@ ggplot(newData, aes(date, steps)) + geom_bar(stat = "identity",
                                              width = 0.7) + facet_grid(. ~ month, scales = "free") + labs(title = "Histogram of Total Number of Steps Taken Each Day (no missing data)", x = "Date", y = "Total number of steps")
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10.png) 
+```
+## Error: could not find function "ggplot"
+```
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -275,4 +288,4 @@ xyplot(avgSteps$meanOfSteps ~ avgSteps$interval | avgSteps$weekdays,
 ```
 
 ![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15.png) 
- No newline at end of file
+ End of file
